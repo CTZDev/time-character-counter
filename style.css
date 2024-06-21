@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: salmon;
+}
+
+.character-main {
+  background-color: rgb(252, 164, 155);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1.2rem;
+
+  & .character-title {
+    font-size: 2.5em;
+    padding: 1.5rem;
+  }
+
+  & textarea {
+    resize: none;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+  }
+}
+
+.character-details {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 0.6rem 0;
+  font-size: 1.3em;
+
+  & .character-text {
+    color: rgb(88, 88, 88);
+  }
+
+  & #totalCharacter {
+    color: rgb(1, 1, 165);
+  }
+
+  & #totalRemaining {
+    color: rgb(204, 14, 14);
+  }
+}
